@@ -1,0 +1,58 @@
+Total participants: 97
+
+Age Distribution:
+18-24: 23 (23.7%)
+25-34: 27 (27.8%)
+35-44: 27 (27.8%)
+45-54: 14 (14.4%)
+55+: 6 (6.2%)
+
+Primary Role Distribution:
+Software Developer: 28 (28.9%)
+Student: 23 (23.7%)
+Researcher: 19 (19.6%)
+Data Scientist / ML Engineer: 16 (16.5%)
+Freelancer: 11 (11.3%)
+
+Education Distribution:
+Master's Degree: 35 (36.1%)
+Bachelor's Degree: 31 (32.0%)
+Ph.D.: 19 (19.6%)
+High School: 12 (12.4%)
+
+Coding Experience Distribution:
+1-3 years: 13 (13.4%)
+4-6 years: 27 (27.8%)
+7+ years: 47 (48.5%)
+Less than 1 year: 10 (10.3%)
+
+Most Used Programming Languages:
+Python: 39 (40.2%)
+JavaScript: 18 (18.6%)
+Java: 11 (11.3%)
+C++: 8 (8.2%)
+R: 4 (4.1%)
+C#: 3 (3.1%)
+PHP: 3 (3.1%)
+Ruby: 2 (2.1%)
+TypeScript: 1 (1.0%)
+MATLAB: 1 (1.0%)
+Go: 1 (1.0%)
+Swift: 1 (1.0%)
+COBOL: 1 (1.0%)
+Kotlin: 1 (1.0%)
+Julia: 1 (1.0%)
+Scala: 1 (1.0%)
+Rust: 1 (1.0%)
+
+AI Tool Usage Frequency:
+Daily: 28 (28.9%)
+Occasionally: 40 (41.2%)
+Weekly: 29 (29.9%)
+
+AI Tools Used:
+ChatGPT: 55 (56.7%)
+GitHub Copilot: 35 (36.1%)
+Codeium: 14 (14.4%)
+Tabnine: 12 (12.4%)
+Replit AI: 8 (8.2%)

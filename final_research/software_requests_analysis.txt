@@ -1,0 +1,49 @@
+Software Request Categories:
+development_tools: 19 (19.6%)
+learning_tools: 25 (25.8%)
+data_analysis: 12 (12.4%)
+research_tools: 20 (20.6%)
+security: 3 (3.1%)
+specialized_systems: 8 (8.2%)
+
+Sample requests by category:
+
+DEVELOPMENT_TOOLS:
+- A comprehensive project management tool that can predict resource allocation
+- A freelance project management and invoicing system
+- An intelligent software architecture design tool
+- A legacy code maintenance system
+- A freelance workflow optimization tool
+
+LEARNING_TOOLS:
+- A personalized learning platform for coding
+- A beginner-friendly coding tutorial app
+- An adaptive coding skills assessment platform
+- A skills transfer knowledge base
+- An adaptive learning recommendation system
+
+DATA_ANALYSIS:
+- A financial forecasting application
+- A comprehensive data analysis toolkit
+- An advanced predictive analytics engine
+- A comprehensive data analysis and visualization platform
+- A comprehensive data analysis toolkit
+
+RESEARCH_TOOLS:
+- A research paper analysis and recommendation engine
+- A scientific collaboration platform
+- A comprehensive research collaboration platform
+- A scientific paper recommendation engine
+- A comprehensive research network platform
+
+SECURITY:
+- A secure document management system
+- A secure freelance management platform
+- A secure freelance project management platform
+
+SPECIALIZED_SYSTEMS:
+- An advanced healthcare diagnostics system
+- A legacy system modernization tool
+- A financial forecasting application
+- A predictive maintenance system
+- A legacy code maintenance system
