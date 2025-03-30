@@ -31,8 +31,14 @@ Contains the code and intermediate outputs from the data analysis process:
 
 ### `/final_research`
 Contains the final research outputs and presentation materials:
-- `research_paper.md` - Complete research paper with findings and discussion
+- `research_paper.md` - Markdown version of the research paper with findings and discussion
 - Analysis results and visualizations for presentation
+
+### Project Root
+- `research_paper.tex` - Complete LaTeX version of the research paper, professional-grade with formatted tables, figures, and bibliography
+- `build_paper.bat` - Windows batch script to compile the LaTeX document
+- `build_paper.sh` - Unix/Linux/Mac shell script to compile the LaTeX document
+- `README.md` - This file, providing an overview of the repository structure and research
 
 ## Research Overview
 
@@ -56,14 +62,17 @@ The research examines several key aspects of AI coding tools:
 
 ## How to Use This Repository
 
-1. Review the research paper in `/final_research/research_paper.md` for a comprehensive overview of findings
+1. Review the LaTeX research paper (`research_paper.tex`) for a comprehensive, professionally formatted analysis of findings
 2. Explore visualizations in the `/final_research` or `/analysis/plots` directories
 3. To reproduce the analysis, run the Python script in `/analysis/data_analysis.py`
 4. Examine the raw survey data in `/Dataset/dataset.csv`
+5. To generate the PDF version of the research paper:
+   - On Windows: Run `build_paper.bat`
+   - On Unix/Linux/Mac: Run `chmod +x build_paper.sh && ./build_paper.sh`
 
 ## Requirements
 
-To run the analysis script, you need:
+### To run the analysis script:
 - Python 3.x
 - pandas
 - matplotlib
@@ -73,4 +82,17 @@ To run the analysis script, you need:
 You can install the required packages with:
 ```
 pip install pandas matplotlib seaborn numpy
-``` 
+```
+
+### To compile the LaTeX document:
+- LaTeX distribution (e.g., TeX Live, MiKTeX)
+- IEEE conference class files
+- Required packages: graphicx, amsmath, amssymb, hyperref, booktabs, multirow, color, float, caption, subcaption, enumerate, listings
+
+You can compile the LaTeX document manually with:
+```
+pdflatex research_paper.tex
+pdflatex research_paper.tex  # Run twice for proper references
+```
+
+Or use the provided build scripts for convenience. 
