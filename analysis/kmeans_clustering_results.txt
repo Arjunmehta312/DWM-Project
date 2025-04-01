@@ -1,0 +1,212 @@
+K-Means Clustering Analysis of Open-Ended Questions
+==================================================
+
+
+Desired Improvements Clustering Results:
+----------------------------------------
+Number of clusters: 10
+
+ Cluster  Count                                                  Top Terms
+       1     13           better, integration, research, citation, context
+       2     12         advanced, learning, machine, models, collaboration
+       3     23             explanations, specific, code, beginner, domain
+       4      7          interactive, tutorials, learning, modules, coding
+       5      4          code, transparent, generation, reasoning, precise
+       6     15 support, traditional, development, programming, approaches
+       7      7               writing, academic, support, better, improved
+       8      6         examples, coding, diverse, educational, contextual
+       9      2             explainability, model, better, writing, domain
+      10      8             security, analysis, better, features, enhanced
+
+Example entries from each cluster:
+
+Cluster 1 examples:
+  1. Better context understanding
+  2. Better citation and attribution mechanisms
+  3. Better error explanation
+
+Cluster 2 examples:
+  1. Clearer learning paths
+  2. Advanced machine learning integration
+  3. More advanced machine learning models
+
+Cluster 3 examples:
+  1. More domain-specific training
+  2. More intuitive interface
+  3. Better code suggestion accuracy
+
+Cluster 4 examples:
+  1. More interactive learning modules
+  2. More interactive learning platforms
+  3. More interactive coding tutorials
+
+Cluster 5 examples:
+  1. More transparent code generation
+  2. More precise code generation
+  3. Enhanced code suggestion mechanisms
+
+Cluster 6 examples:
+  1. More language support
+  2. More traditional coding support
+  3. More traditional development approaches
+
+Cluster 7 examples:
+  1. Improved academic writing support
+  2. Better academic writing support
+  3. More academic writing support
+
+Cluster 8 examples:
+  1. More diverse coding examples
+  2. More diverse coding learning paths
+  3. More contextual coding examples
+
+Cluster 9 examples:
+  1. Better model explainability
+  2. Better model explainability
+
+Cluster 10 examples:
+  1. Improved security features
+  2. More security checks
+  3. Enhanced security protocols
+
+==================================================
+
+Additional Comments Clustering Results:
+---------------------------------------
+Number of clusters: 10
+
+ Cluster  Count                                               Top Terms
+       1     16             ai, using, supplement, enabling, previously
+       2     13    maintaining, research, academic, boundaries, pushing
+       3      9 development, software, expanding, changed, capabilities
+       4      8        programming, making, accessible, discovering, ai
+       5     12                  tools, learning, ai, using, navigating
+       6      7     exploring, programming, fundamentals, potential, ai
+       7     12        data, workflows, transforming, science, approach
+       8     11         balancing, assistance, personal, ai, creativity
+       9      4        preserving, expertise, human, coding, traditions
+      10      5             coding, balance, finding, right, assistance
+
+Example entries from each cluster:
+
+Cluster 1 examples:
+  1. AI is a collaborative tool not a replacement
+  2. Skeptical about complete AI integration
+  3. AI is expanding developer capabilities
+
+Cluster 2 examples:
+  1. Pushing boundaries of research with AI
+  2. Maintaining software engineering principles
+  3. Advancing research methodologies
+
+Cluster 3 examples:
+  1. Excited about AI's potential in software development
+  2. Revolutionizing software development
+  3. Expanding software development capabilities
+
+Cluster 4 examples:
+  1. Discovering programming through AI
+  2. Discovering programming through AI
+  3. AI is making programming more accessible to newcomers
+
+Cluster 5 examples:
+  1. Learning a lot through AI tools
+  2. Enjoying the learning process with AI
+  3. Experimenting with AI tools
+
+Cluster 6 examples:
+  1. Exploring coding through AI assistance
+  2. Exploring programming through AI
+  3. Exploring AI's academic potential
+
+Cluster 7 examples:
+  1. AI is revolutionizing how we approach complex problems
+  2. Transforming research workflows
+  3. Integrating AI into data workflows
+
+Cluster 8 examples:
+  1. Balancing between AI assistance and personal skills
+  2. Balancing AI and personal coding skills
+  3. Balancing AI and personal creativity
+
+Cluster 9 examples:
+  1. Preserving human expertise
+  2. Preserving software engineering traditions
+  3. Preserving human expertise in coding
+
+Cluster 10 examples:
+  1. Navigating coding world with AI help
+  2. Discovering coding through AI assistance
+  3. Finding the right balance between AI assistance and manual coding
+
+==================================================
+
+Autonomous Software Request Clustering Results:
+-----------------------------------------------
+Number of clusters: 10
+
+ Cluster  Count                                                    Top Terms
+       1     10 platform, research, comprehensive, collaboration, scientific
+       2      8   documentation, software, architecture, system, development
+       3     11               management, system, freelance, project, secure
+       4     10          data, analysis, comprehensive, automated, detection
+       5      7                 app, coding, tutorial, interactive, beginner
+       6     28        coding, programming, learning, personalized, adaptive
+       7      5             predictive, maintenance, analytics, code, legacy
+       8      7       design, intelligent, assistant, architecture, software
+       9      7      tool, visualization, algorithm, validation, methodology
+      10      4    literature, review, citation, comprehensive, verification
+
+Example entries from each cluster:
+
+Cluster 1 examples:
+  1. A comprehensive e-commerce platform
+  2. A scientific collaboration platform
+  3. A comprehensive research collaboration platform
+
+Cluster 2 examples:
+  1. A software development best practices platform
+  2. A software development knowledge transfer system
+  3. A comprehensive academic research documentation system
+
+Cluster 3 examples:
+  1. A comprehensive project management tool that can predict resource allocation
+  2. An advanced healthcare diagnostics system
+  3. A freelance project management and invoicing system
+
+Cluster 4 examples:
+  1. A research paper analysis and recommendation engine
+  2. A comprehensive data analysis toolkit
+  3. A comprehensive data analysis and visualization platform
+
+Cluster 5 examples:
+  1. A beginner-friendly coding tutorial app
+  2. An interactive coding mentor app
+  3. A beginner-friendly coding exploration app
+
+Cluster 6 examples:
+  1. A personalized learning platform for coding
+  2. A financial forecasting application
+  3. An adaptive coding skills assessment platform
+
+Cluster 7 examples:
+  1. A predictive maintenance system
+  2. An advanced predictive analytics engine
+  3. A legacy code maintenance system
+
+Cluster 8 examples:
+  1. An intelligent software architecture design tool
+  2. An intelligent software design assistant
+  3. An intelligent code refactoring assistant
+
+Cluster 9 examples:
+  1. A legacy system modernization tool
+  2. A freelance workflow optimization tool
+  3. An interactive algorithm visualization tool
+
+Cluster 10 examples:
+  1. A comprehensive literature review tool
+  2. A comprehensive literature review and citation manager
+  3. A scientific paper writing assistant with citation verification
+
+==================================================

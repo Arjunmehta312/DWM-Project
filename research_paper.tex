@@ -41,7 +41,7 @@ This research examines the usage patterns, impacts, and perceptions of artificia
 \end{abstract}
 
 \begin{IEEEkeywords}
-AI coding tools, software development, developer productivity, data mining, ChatGPT, GitHub Copilot, trust in AI
+AI coding tools, software development, developer productivity, data mining, k-means clustering, ChatGPT, GitHub Copilot, trust in AI
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -295,6 +295,176 @@ Analysis of participants' requests for autonomous software capabilities revealed
 
 
 The requested capabilities varied by professional role, with students prioritizing learning tools, researchers focusing on academic assistance, and developers seeking productivity enhancement and automation of routine tasks.
+
+\section{K-means Clustering Analysis of Open-Ended Responses}
+To gain deeper insights into the qualitative aspects of our dataset, we employed K-means clustering to analyze respondents' open-ended responses. This unsupervised machine learning approach allowed us to identify patterns and groupings in the textual data that might not be apparent through traditional analysis methods. We focused on three key open-ended questions:
+
+\begin{enumerate}
+    \item Desired Improvements for AI coding tools
+    \item Additional Comments about AI coding experiences
+    \item Autonomous Software Requests (desired future applications)
+\end{enumerate}
+
+\subsection{Methodology}
+For each open-ended question, we performed the following steps:
+\begin{itemize}
+    \item Text preprocessing (tokenization, removal of stopwords)
+    \item Feature extraction using TF-IDF vectorization
+    \item Silhouette score analysis to determine optimal cluster counts
+    \item K-means clustering with the optimal number of clusters
+    \item Visualization and interpretation of resulting clusters
+\end{itemize}
+
+The silhouette score analysis identified the optimal number of clusters for each question, with 10 clusters providing the best separation for each of the three open-ended responses. We then analyzed the relationship between cluster membership and other variables such as professional role, coding experience, and AI trust level.
+
+\subsection{Desired Improvements Clustering}
+Our analysis identified 10 distinct clusters of desired improvements for AI coding tools, each representing different priorities and concerns among participants.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{analysis/plots/cluster_scatter_desired_improvements.png}
+    \caption{PCA visualization of clusters for Desired Improvements}
+    \label{fig:desired_improvements_clusters}
+\end{figure}
+
+The most significant clusters included:
+\begin{itemize}
+    \item \textbf{Explanation-Focused (23.7\%):} Improvements in explanations, code clarity, and domain-specific understanding, primarily requested by students and early-career developers.
+    \item \textbf{Traditional Support (15.5\%):} Traditional programming approaches and development methodologies, predominantly requested by experienced developers skeptical of AI.
+    \item \textbf{Research Integration (13.4\%):} Better context understanding, citation mechanisms, and research workflow integration, primarily from researchers.
+    \item \textbf{Advanced Features (12.4\%):} Advanced machine learning models and collaboration tools, predominantly from data scientists.
+    \item \textbf{Security Features (8.2\%):} Enhanced security features and analysis capabilities, primarily from freelancers and client-facing roles.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{analysis/plots/desired_improvements_cluster_3_wordcloud.png}
+        \caption{Explanation-Focused Cluster}
+        \label{fig:sub-explanation}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{analysis/plots/desired_improvements_cluster_6_wordcloud.png}
+        \caption{Traditional Support Cluster}
+        \label{fig:sub-traditional}
+    \end{subfigure}
+    \caption{Word clouds visualizing key terms in the two largest clusters}
+    \label{fig:improvements_wordclouds}
+\end{figure}
+
+Cross-tabulation analysis revealed strong relationships between professional roles and improvement priorities. Data scientists disproportionately requested advanced features (43.8\%), while researchers focused on academic writing support and citation mechanisms (52.6\%). Software developers showed a bimodal distribution between traditional support (28.6\%) and enhanced contextual features (25.0\%).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{analysis/plots/role_vs_desired_improvements_cluster_heatmap.png}
+    \caption{Relationship between Professional Role and Desired Improvements Clusters}
+    \label{fig:role_improvements_heatmap}
+\end{figure}
+
+\subsection{Additional Comments Clustering}
+Analysis of the additional comments revealed distinct narratives about AI coding tools' impact on workflows and professional practice.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{analysis/plots/cluster_scatter_additional_comments.png}
+    \caption{PCA visualization of clusters for Additional Comments}
+    \label{fig:additional_comments_clusters}
+\end{figure}
+
+The most significant clusters included:
+\begin{itemize}
+    \item \textbf{AI as Supplement (16.5\%):} Comments focusing on AI as complementary to human skills rather than a replacement, with mentions of enabling previously difficult tasks.
+    \item \textbf{Academic Integrity (13.4\%):} Maintaining research standards and academic boundaries while leveraging AI, primarily from researchers.
+    \item \textbf{Workflow Transformation (12.4\%):} Emphasis on how AI is transforming data science and professional workflows, predominantly from data scientists.
+    \item \textbf{Balancing Act (11.3\%):} Comments about finding the right balance between AI assistance and preserving personal creativity and skills.
+    \item \textbf{Educational Tool (12.4\%):} Focus on AI's role in learning and navigating programming concepts, primarily from students.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{analysis/plots/additional_comments_cluster_5_wordcloud.png}
+        \caption{Educational Tool Cluster}
+        \label{fig:sub-educational}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{analysis/plots/additional_comments_cluster_7_wordcloud.png}
+        \caption{Workflow Transformation Cluster}
+        \label{fig:sub-workflow}
+    \end{subfigure}
+    \caption{Word clouds visualizing key terms in two representative comment clusters}
+    \label{fig:comments_wordclouds}
+\end{figure}
+
+Trust level showed a strong correlation with comment clusters. Participants with high trust levels (4-5) predominantly contributed to the "Workflow Transformation" and "Development Expansion" clusters, indicating enthusiasm about AI's transformative potential. Those with lower trust levels (1-2) dominated the "Preserving Expertise" and "Traditional Approaches" clusters, emphasizing concerns about skill erosion.
+
+\subsection{Autonomous Software Request Clustering}
+The clustering of requested autonomous software capabilities revealed distinct categories of desired future applications.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{analysis/plots/cluster_scatter_autonomous_software_request.png}
+    \caption{PCA visualization of clusters for Autonomous Software Requests}
+    \label{fig:software_request_clusters}
+\end{figure}
+
+The most significant clusters included:
+\begin{itemize}
+    \item \textbf{Learning Tools (28.9\%):} Personalized, adaptive learning platforms focusing on coding education and skill development.
+    \item \textbf{Research Platforms (10.3\%):} Comprehensive research collaboration tools with scientific data management capabilities.
+    \item \textbf{Project Management (11.3\%):} Secure freelance and project management systems with enhanced features for client work.
+    \item \textbf{Data Analysis (10.3\%):} Comprehensive data analysis, visualization, and automated processing tools.
+    \item \textbf{Intelligent Design Assistants (7.2\%):} Tools focusing on software architecture and intelligent design assistance.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{analysis/plots/autonomous_software_request_cluster_9_wordcloud.png}
+        \caption{Visualization \& Algorithm Tools}
+        \label{fig:sub-algorithm}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{analysis/plots/autonomous_software_request_cluster_8_wordcloud.png}
+        \caption{Intelligent Design Assistants}
+        \label{fig:sub-design}
+    \end{subfigure}
+    \caption{Word clouds visualizing key terms in two representative software request clusters}
+    \label{fig:requests_wordclouds}
+\end{figure}
+
+Professional roles strongly influenced the types of autonomous software requested. Students overwhelmingly requested learning tools (73.9\%), while researchers focused on research platforms (42.1\%) and academic paper management systems (31.6\%). Data scientists prioritized advanced analytics platforms (37.5\%), while freelancers were uniquely focused on project management systems (72.7\%).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{analysis/plots/role_vs_autonomous_software_request_cluster_heatmap.png}
+    \caption{Relationship between Professional Role and Autonomous Software Request Clusters}
+    \label{fig:role_requests_heatmap}
+\end{figure}
+
+\subsection{Key Insights from Clustering Analysis}
+The K-means clustering analysis revealed several important insights that complement our earlier findings:
+
+\begin{enumerate}
+    \item \textbf{Role-Specific Priorities:} Each professional role demonstrated distinct clusters of priorities, concerns, and requests that align with their specific workflows and contexts.
+    
+    \item \textbf{Trust-Based Narratives:} Trust level in AI strongly influenced the narrative frames participants used when discussing AI, with high-trust users emphasizing transformation and innovation, while low-trust users focused on preservation and tradition.
+    
+    \item \textbf{Experience-Based Patterns:} Coding experience correlated with distinct clusters across all three open-ended questions, with novices favoring educational support, mid-career professionals seeking balanced integration, and highly experienced developers showing polarized preferences.
+    
+    \item \textbf{Context-Specific Concerns:} Each cluster revealed context-specific concerns and priorities that might be missed in broader categorical analysis, such as the distinction between security concerns for client-facing freelancers versus academic integrity concerns for researchers.
+\end{enumerate}
+
+These nuanced patterns underscore the importance of tailored approaches to AI tool development that account for the specific professional contexts, experience levels, and concerns of different user segments.
 
 \section{Discussion}
 \subsection{Key Insights}
