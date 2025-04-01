@@ -11,6 +11,8 @@ Contains the raw survey data used for the analysis:
 ### `/analysis`
 Contains the code and intermediate outputs from the data analysis process:
 - `data_analysis.py` - Python script that performs statistical analysis and generates visualizations
+- `kmeans_clustering.py` - Python script that applies K-means clustering to open-ended question responses
+- `kmeans_clustering_results.txt` - Results of the K-means clustering analysis with cluster summaries
 - `analysis_stats.txt` - Basic descriptive statistics about the survey respondents
 - `software_requests_analysis.txt` - Analysis of requested autonomous software capabilities
 - Cross-tabulation analysis files (CSV format):
@@ -28,6 +30,7 @@ Contains the code and intermediate outputs from the data analysis process:
   - Trust levels and concerns
   - Creativity impact
   - Future software capabilities
+  - K-means clustering visualizations (PCA plots, wordclouds, heatmaps)
 
 ### `/final_research`
 Contains the final research outputs and presentation materials:
@@ -49,7 +52,11 @@ The research examines several key aspects of AI coding tools:
 3. **Experience level influence** on trust and perceptions
 4. **Impact on productivity and code quality** across different user groups
 5. **Effect on creativity and innovation** in software development
-6. **Desired future capabilities** in AI coding tools
+6. **K-means clustering analysis of open-ended responses** to identify patterns in:
+   - Desired improvements for AI coding tools
+   - Additional comments about AI coding experiences
+   - Autonomous software requests (desired future applications)
+7. **Desired future capabilities** in AI coding tools
 
 ## Key Findings
 
@@ -58,30 +65,48 @@ The research examines several key aspects of AI coding tools:
 - Experienced developers show polarized views on AI tools, while mid-career professionals show consistent moderate trust
 - Professional roles significantly predict both usage patterns and concerns about AI tools
 - The majority of users report that AI enhances creativity rather than diminishes it
-- The most requested autonomous software capabilities are learning tools (25.8%) and research tools (20.6%)
+- K-means clustering revealed role-specific priorities and concerns:
+  - Students prioritize explanation-focused improvements and learning tools
+  - Researchers focus on academic writing support and research platforms
+  - Data scientists request advanced features and analytics capabilities
+  - Freelancers emphasize security features and project management systems
+  - Software developers show bimodal distribution between traditional support and enhanced contextual features
+- Trust levels strongly influence the narrative frames participants use when discussing AI tools
+- The most requested autonomous software capabilities are learning tools (28.9%) and research platforms (10.3%)
 
 ## How to Use This Repository
 
 1. Review the LaTeX research paper (`research_paper.tex`) for a comprehensive, professionally formatted analysis of findings
 2. Explore visualizations in the `/final_research` or `/analysis/plots` directories
-3. To reproduce the analysis, run the Python script in `/analysis/data_analysis.py`
-4. Examine the raw survey data in `/Dataset/dataset.csv`
-5. To generate the PDF version of the research paper:
+3. To reproduce the statistical analysis, run the Python script in `/analysis/data_analysis.py`
+4. To reproduce the K-means clustering analysis, run the Python script in `/analysis/kmeans_clustering.py`
+5. Examine the raw survey data in `/Dataset/dataset.csv`
+6. To generate the PDF version of the research paper:
    - On Windows: Run `build_paper.bat`
    - On Unix/Linux/Mac: Run `chmod +x build_paper.sh && ./build_paper.sh`
 
 ## Requirements
 
-### To run the analysis script:
+### To run the analysis scripts:
 - Python 3.x
 - pandas
 - matplotlib
 - seaborn
 - numpy
+- scikit-learn (for K-means clustering)
+- nltk (for text preprocessing)
+- wordcloud (for generating word clouds)
 
 You can install the required packages with:
 ```
-pip install pandas matplotlib seaborn numpy
+pip install pandas matplotlib seaborn numpy scikit-learn nltk wordcloud
+```
+
+### For NLTK resources:
+```python
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 ```
 
 ### To compile the LaTeX document:
